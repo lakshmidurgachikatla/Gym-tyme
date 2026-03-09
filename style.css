@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans:ital,wght@1,300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+}
+
+img{
+    width:100%;
+}
+body{
+    height: 100vh;
+    background-color: #212121;
+    overflow-x: hidden;
+}
+.top .first{
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.top .first h2{
+    color: black;
+}
+.middle {
+  background: white;
+  width: 80%;
+  margin:5vh auto;
+  border-radius: 12px;
+  }
+
+.equipment h2{
+  text-align: center;
+}
+
+/*Mobile approach*/
+@media(min-width:300px){
+  .first img{
+    height:3rem;
+    width: auto;
+}
+  .first{
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+  }
+  .heading p{
+font-family: noto sans;
+margin-top: 1rem;
+font-size: 1rem;
+  }
+  
+  .heading h2,p{
+text-align: center;
+  }
+    
+  .heading h2{
+    margin-top: 2rem;
+  }
+  .heading img{
+    margin-top: 2rem;
+  }
+  #top{
+    margin-top: 0.8rem;
+  }
+  .middle{
+    width: 80%;
+    font-family: lato;
+  }
+  .middle label{
+    color: black;
+  }
+  .middle form{
+    margin-left: 2rem;
+   
+  }
+ .middle input[type="text"]{
+  font-size: medium;
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+  width: 80%;
+  color: black;
+}
+ .middle{
+  border-radius: 10px;
+
+ }
+ 
+ .middle input[type="radio"],input[type="checkbox"]{
+  margin-right: 1rem;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+ }
+ .middle .checkboxes{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+ .middle form #button{
+  background-color: black;
+  padding:0.5rem;
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 1rem;
+ margin-left: 0;
+ }
+.equipment #tools img{
+  width:80%;
+}
+ .equipment #tools{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 2rem;
+ }
+ .tool{
+        margin: 1rem;
+ }
+
+ .equipment .tool{
+  background-color: white;
+  border-radius: 20%;
+  padding: 0.5rem;
+ 
+ }
+ .bottom{
+  text-align: center;
+  margin-bottom: 4rem;
+ }
+  
+ .bottom img{
+  width: 80%;
+ }
+ .bottom h2{
+  padding:1rem;
+ }
+ .bottom .segmentA{
+  background-color: white;
+ }
+ .bottom .segmentA h2{
+  color: black;
+ }
+
+ .bottom .segmentB{
+margin-top: 2rem;
+ }
+}
+
+
+/*tablet mode*/
+
+@media(min-width:700px){
+ 
+  .heading h2,p{
+    font-size: 2rem;
+}
+  .equipment #tools{
+    padding:4rem;
+    margin-top: 1rem;
+  }
+  .bottom{
+    display: flex;
+    
+  }
+  .bottom h2{
+    padding: 1rem;
+  }
+  .bottom .segmentA{
+    width:50%;
+  }
+  .bottom .segmentA img{
+    width:80%;
+    height: 70%;
+  }
+  .bottom .segmentB{
+    margin-top: 0;
+    margin-left:5rem;
+  }
+  .bottom .segmentB img{
+    height:80%;
+    width: 100%;
+  
+   
+  }
+}
+
+
+/*desktop mode*/
+@media(min-width:900px){
+.top .first{
+  justify-content: flex-start ;
+  padding-left: 5rem;
+}
+.top .first h2{
+  margin-left: 0.5rem;
+}
+.heading h2,p{
+ display: none;
+}
+.heading img{
+  height: 80%;
+  width: 80%;
+  margin-right:15rem;
+  margin-left: 0;
+}
+.middle form #button{
+  padding:1rem;
+  font-size:1rem;
+  font-weight:lighter;
+}
+.middle{ 
+  height:48vh;
+  width: 30%;
+  margin-top: 7rem;
+  padding: 1rem;
+}
+.middle form{
+  font-size: 1rem;
+}
+
+.middle label{
+  font-family: lato;
+}
+.hero{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.equipment{
+  margin-top:-1rem ;
+}
+.equipment h2{
+  font-size: 3rem;
+}
+.equipment #tools{
+ 
+  grid-template-columns: repeat(4,1fr);
+  padding: 5rem;
+  border-radius: 10px;
+}
+#tools .tool{
+ margin: 1rem;
+ margin-top:-1rem;
+}
+.bottom{
+  width: 100%;
+  height: 50vh;
+  margin-top: -1rem;
+}
+.bottom .segmentA{
+  width: 50%;
+  height: 50vh;
+}
+
+.bottom .segmentB{
+  height: 50vh;
+  margin-left: 10rem;
+}
+#white{
+  height: 80%;
+  width: 50%;
+}
+}
